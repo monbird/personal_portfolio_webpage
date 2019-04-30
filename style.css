@@ -1,3 +1,90 @@
 body {
-    background-color: aquamarine;
+    background-color: bisque;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    /* height: 30px; */
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: ivory;    
+}
+  
+  #navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+ 
+#welcome-section {
+    height: 100vh;
+    padding-top: 35vh;
+    padding-left: 200px;
+    text-align: left;
+}
+
+#welcome-section h1 {
+    padding-top: 15px;
+}
+
+#welcome-section img {
+    height: 150px;
+    width: auto;
+    float: left;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    /* flex-wrap: wrap; */
+}
+
+.flex-container a {
+    width: 20%;
+}
+
+#projects img {
+    height: 200px;
+    width: auto;
+}
+
+#contact-section{
+    text-align: center;
+}
+
+#contact-section img {
+    height: 50px;
+    width: auto;
+    padding: 20px 25px 50px 25px;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 30px;
+    }
+  }
+  

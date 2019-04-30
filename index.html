@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>monptasz portfolio</title>
-        <link href="style.css" type="text/css" rel="stylesheet">
+        <title>Monbird</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="./favicon.png" rel="icon" type="image/png">
     </head>
     <body>
-        <p>Welcome on my page. Below you can find a list of my html & css projects:</p>
-        <ol>
-            <li><a href="/tribute-page" target="_blank">Tribute Page</a></li>
-            <li><a href="/survey-form" target="_blank">Survey Form</a></li>
-            <li><a href="/product-landing-page" target="_blank">Product Landing Page</a></li>
-            <li><a href="/technical-documentation-page" target="_blank">Technical Documentation Page</a></li>
-        </ol>
+        <header>
+            <nav id="navbar">
+                <a href="#welcome-section">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact-section">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <div id="welcome-section">
+                <img src="./bird-icon.png">
+                <h1>Hi,<br>I'm Monbird,<br>Front End Web Developer</h1>
+                <h4>Welcome on my page and happy browsing!</h4>
+            </div>
+            <div id="projects" class="flex-container">
+                <a href="/tribute-page"  class="project-tile">
+                    <img src="./Screenshot 1.png"  alt="project 1 screenshot">
+                    <h4>Tribute Page</h4>
+                    <p>The page is purely informative and does not involve any user interaction.</p>
+                </a>
+                <a href="/survey-form" class="project-tile">
+                    <img src="./Screenshot 2.png"  alt="project 2 screenshot">
+                    <h4>Survey Form</h4>
+                    <p>The page could be used as a newsletter signup form by an online shop.</p>
+                </a>
+                <a href="/product-landing-page" class="project-tile">
+                    <img src="./Screenshot 3.png"  alt="project 3 screenshot">
+                    <h4>Product Landing Page</h4>
+                    <p>The page could be used as an online presence of a pet spa saloon that advertises its available services.</p>
+                </a>
+                <a href="/technical-documentation-page" class="project-tile">
+                    <img src="./Screenshot 4.png"  alt="project 3 screenshot">
+                    <h4>Technical Documentation Page</h4>
+                    <p>The page is designed to present a technical documentation of CSS Animations.</p>
+                </a>
+            </div>
+            <div id="contact-section">
+                <h3>Get in touch</h3>
+                <a href="https://github.com/monptasz" target="_blank" id="profile-link">
+                    <img src="./github_icon.png" alt="github icon">
+                </a>
+                <a href="mailto:mon.ptasz@gmail.com" target="_blank" id="profile-link">
+                    <img src="./email-icon.png" alt="email icon">
+                </a>
+                <a href="https://www.facebook.com/monika.ptaszynska93" target="_blank" id="profile-link">
+                    <img src="./fb-icon.png" alt="facebook icon">
+                </a>
+            </div>
+        </main>
+        <footer>
+                <p>Coded with &#9825; by Monbird</p>
+        </footer>
     </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
