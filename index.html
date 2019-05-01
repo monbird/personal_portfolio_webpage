@@ -2,56 +2,80 @@
 <html>
     <head>
         <title>Monbird</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link href="style.css" rel="stylesheet" type="text/css">
         <link href="./favicon.png" rel="icon" type="image/png">
     </head>
     <body>
         <header>
             <nav id="navbar">
-                <a href="#welcome-section">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact-section">Contact</a>
+                <a href="#welcome-section"><span class="color1">About</span></a>
+                <a href="#projects"><span class="color2">Projects</span></a>
+                <a href="#contact-section"><span class="color3">Contact</span></a>
             </nav>
         </header>
         <main>
             <div id="welcome-section">
                 <img src="./bird-icon.png">
-                <h1>Hi,<br>I'm Monbird,<br>Front End Web Developer</h1>
-                <h4>Welcome on my page and happy browsing!</h4>
+                <h1>Hi,<br>I'm <span class="color1">Monbird</span>,<br>Front End Web Developer</h1>
+                <h3>Welcome on my page and happy browsing!</h3>
             </div>
-            <div id="projects" class="flex-container">
-                <a href="/tribute-page"  class="project-tile">
-                    <img src="./Screenshot 1.png"  alt="project 1 screenshot">
-                    <h4>Tribute Page</h4>
-                    <p>The page is purely informative and does not involve any user interaction.</p>
-                </a>
-                <a href="/survey-form" class="project-tile">
-                    <img src="./Screenshot 2.png"  alt="project 2 screenshot">
-                    <h4>Survey Form</h4>
-                    <p>The page could be used as a newsletter signup form by an online shop.</p>
-                </a>
-                <a href="/product-landing-page" class="project-tile">
-                    <img src="./Screenshot 3.png"  alt="project 3 screenshot">
-                    <h4>Product Landing Page</h4>
-                    <p>The page could be used as an online presence of a pet spa saloon that advertises its available services.</p>
-                </a>
-                <a href="/technical-documentation-page" class="project-tile">
-                    <img src="./Screenshot 4.png"  alt="project 3 screenshot">
-                    <h4>Technical Documentation Page</h4>
-                    <p>The page is designed to present a technical documentation of CSS Animations.</p>
-                </a>
+            <div id="projects">
+                <h2 class="color2">Latest crafts</h2>
+                <hr>
+                <div class="flex-container">
+                    <div>
+                        <a href="/tribute-page"  class="project-tile">
+                            <div class="table">
+                                <h4>Tribute Page</h4>
+                            </div>
+                            <img src="./Screenshot 1.png"  alt="project 1 screenshot">
+                            <p>The page is purely informative and does not involve any user interaction.</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/survey-form" class="project-tile">
+                            <div class="table">
+                                <h4>Survey Form</h4>
+                            </div>
+                            <img src="./Screenshot 2.png"  alt="project 2 screenshot">
+                            <p>The page could be used as a newsletter signup form by an online shop.</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/product-landing-page" class="project-tile">
+                            <div class="table">
+                                <h4>Product Landing Page</h4>
+                            </div>
+                            <img src="./Screenshot 3.png"  alt="project 3 screenshot">
+                            <p>The page could be used as an online presence of a pet spa saloon that advertises its available services.</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/technical-documentation-page" class="project-tile">
+                            <div class="table">
+                                <h4>Technical Documentation Page</h4>
+                            </div>
+                            <img src="./Screenshot 4.png"  alt="project 3 screenshot">
+                            <p>The page is designed to present a technical documentation of CSS Animations.</p>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div id="contact-section">
-                <h3>Get in touch</h3>
-                <a href="https://github.com/monptasz" target="_blank" id="profile-link">
-                    <img src="./github_icon.png" alt="github icon">
-                </a>
-                <a href="mailto:mon.ptasz@gmail.com" target="_blank" id="profile-link">
-                    <img src="./email-icon.png" alt="email icon">
-                </a>
-                <a href="https://www.facebook.com/monika.ptaszynska93" target="_blank" id="profile-link">
-                    <img src="./fb-icon.png" alt="facebook icon">
-                </a>
+                <h2 class="color3">Get in touch</h2>
+                <hr>
+                <div class="contact-icons">
+                    <a href="https://github.com/monptasz" target="_blank" id="profile-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:mon.ptasz@gmail.com" target="_blank" id="profile-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.facebook.com/monika.ptaszynska93" target="_blank" id="profile-link">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </div>
             </div>
         </main>
         <footer>
