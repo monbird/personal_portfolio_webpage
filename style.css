@@ -66,7 +66,7 @@ body {
 
 #projects {
     padding-top: 110px;
-    height: 130vh;
+    display: block;
 }
 
 .flex-container {
@@ -118,6 +118,7 @@ body {
     padding-top: 110px;
     padding-bottom: 10px;
     height: 60vh;
+    margin-top: 70px;
 }
 
 .fab, .fas {
@@ -130,14 +131,22 @@ body {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 footer {
     text-align: center;
     margin-bottom: 10px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+footer p a {
+    color: rgb(250, 250, 250);
+}
+
+footer p a:hover {
+    color: pink;
 }
 
 h2 {
