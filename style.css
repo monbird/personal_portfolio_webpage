@@ -78,9 +78,11 @@ body {
 }
 
 .flex-container > div {
-    width: 300px;
+    width: 360px;
     position: relative;
-    padding: 0 15px 20px 15px;
+    padding: 10px 15px 35px 15px;
+    margin-top: 40px;
+    margin-bottom: 65px;
 }
 
 #projects .table {
@@ -89,9 +91,9 @@ body {
 }
 
 #projects h4 {
-    height: 60px;
+    font-size: 20px;
+    height: 70px;
     width: 100%;
-    padding: 10px 0;
     color: rgb(250, 250, 250);
     text-align: center;
     display: table-cell;
@@ -108,9 +110,31 @@ body {
 }
 
 #projects p {
+    font-size: 18px;
     text-align: center;
     padding-top: 10px;
+    margin-top: 12px;
+    margin-bottom: 8px;
     color: rgb(175, 180, 192);
+}
+
+.technology-badges {
+    margin-top: 12px;
+    padding: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+ 
+.badge {
+    text-align: center;
+    background-color: rgb(163, 107, 221);
+    color: white;
+    border-radius: 7px;
+    font-size: 12px;
+    padding: 7px;
+    margin: 5px 4px;
 }
 
 #contact-section {
@@ -138,7 +162,7 @@ a {
 
 footer {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 
 footer p a {
@@ -152,6 +176,7 @@ footer p a:hover {
 h2 {
     text-align: center;
     padding-bottom: 10px;
+    font-size: 26px;
 }
 
 hr {
@@ -235,5 +260,22 @@ hr {
 
     #navbar a:hover {
         font-size: 20px;
+    }
+
+    .flex-container > div {
+        width: 500px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #contact-section {
+        padding-top: 90px;
+        padding-bottom: 10px;
+        height: 65vh;
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 22px;
     }
 }
