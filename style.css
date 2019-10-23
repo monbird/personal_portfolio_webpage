@@ -137,6 +137,11 @@ body {
     margin: 5px 4px;
 }
 
+.backend {
+    background-color: #69b07c;
+    color: white;
+}
+
 #contact-section {
     text-align: center;
     padding-top: 110px;
