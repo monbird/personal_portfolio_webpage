@@ -4,12 +4,12 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151054195-1"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-151054195-1');
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-151054195-1');
         </script>
+        <!-------------------------------------------------->
 
         <title>Monbird portfolio</title>
         <meta charset="utf-8">
@@ -23,20 +23,26 @@
         <header>
             <nav id="navbar">
                 <a href="#welcome-section"><span class="color1">About</span></a>
-                <a href="#projects"><span class="color2">Projects</span></a>
+                <a href="#projects-section"><span class="color2">Projects</span></a>
                 <a href="#contact-section"><span class="color3">Contact</span></a>
             </nav>
         </header>
         <main>
             <div id="welcome-section">
                 <img src="./bird-icon.png">
-                <h1>Hi,<br>I'm <span class="color1">Monbird</span>,<br>Front End Web Developer</h1>
-                <h3>Welcome on my page and happy browsing!</h3>
+                <br>
+                <h1 id="x1">Hi,</h1>
+                <h1 id="x2">I'm <span class="color1">Monbird</span>,</h1>
+                <h1 id="x3">London based Web Developer.</h1>
+                <div id="x4">
+                    <h3>Welcome to my Portfolio!</h3>
+                    <h3>Have a project, idea or problem you'd like to discuss? Get in touch!</h3>
+                </div>
             </div>
-            <div id="projects">
+            <div id="projects-section">
                 <h2 class="color2">Latest crafts</h2>
                 <hr>
-                <div class="flex-container">
+                <div class="projects-container">
                     <div>
                         <a href="/tic-tac-toe">
                             <div class="table">
@@ -87,7 +93,7 @@
                                 <h4>News API</h4>
                             </div>
                             <img src="./project_screenshots/news_api_screenshot.png"  alt="news api project screenshot">
-                            <p>This web page fetches and displays latest news headlines for various countries. Data is retrived from a server asynchronously without interfering with the display and behavior of the existing page.</p>
+                            <p>This web page fetches and displays latest news headlines for various countries. Data is retrieved from a server asynchronously without interfering with the display and behaviour of the existing page.</p>
                         </a>
                         <div class="technology-badges">
                             <span class="badge">HTML5</span>
@@ -214,14 +220,14 @@
                 <h2 class="color3">Get in touch</h2>
                 <hr>
                 <div class="contact-icons">
-                    <a href="https://github.com/monbird" target="_blank" id="profile-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:mon.ptasz@gmail.com" target="_blank" id="profile-link">
+                    <a href="mailto:mon.ptasz@gmail.com" target="_blank">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="https://www.facebook.com/monika.ptaszynska93" target="_blank" id="profile-link">
-                        <i class="fab fa-facebook-square"></i>
+                    <a href="https://github.com/monbird" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/monbird" target="_blank">
+                        <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
             </div>

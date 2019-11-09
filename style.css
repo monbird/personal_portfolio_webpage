@@ -5,9 +5,15 @@ html {
 }
 
 body {
-    background-color: rgb(45, 48, 57);
     color: rgb(250, 250, 250);
     font-family: 'Gugi', cursive;
+    margin: 0;
+    background-image: url("./background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 * {
@@ -22,12 +28,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: rgb(29, 30, 37);
     z-index: 3;
+
+    background:
+       radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)
+       left
+       bottom
+       rgba(29, 30, 37, 0.93) 
+       no-repeat;
+   background-size: 100% 2px;
 }
   
 #navbar a {
-    text-decoration: none;
     display: block;
     padding: 25px 30px;
     font-size: 20px;
@@ -44,32 +56,95 @@ body {
 #welcome-section {
     height: 70vh;
     padding-top: 35vh;
-    padding-left: 200px;
+    padding-left: 15vw;
+    padding-right: 10vw;
     text-align: left;
 }
 
-#welcome-section h1 {
-    padding-top: 15px;
+h1, h2 {
+    text-shadow: 2px 2px 1px rgb(20, 20, 20);
+}
+
+h3, footer p {
+    text-shadow: 1px 1px 1px rgb(10, 10, 10);
+}
+
+#x4 {
+    padding-top: 8px;
 }
 
 #welcome-section h3 {
-    font-style: italic;
-    color: rgb(175, 180, 192);
+    font-size: 20px;
+    color: rgb(230, 230, 230);
+}
+
+/* CSS animations */
+@keyframes animation1 {
+    50%  {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+#x1 {
+    animation-name: animation1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+#x2 {
+    animation-name: animation1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1.7s;
+    opacity: 0;
+}
+
+#x3 {
+    animation-name: animation1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 2.7s;
+    opacity: 0;
+}
+
+#x4 {
+    animation-name: slide-left;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+        width: 300%;
+        opacity: 1;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+        opacity: 1;
+    }
 }
 
 #welcome-section img {
-    height: 150px;
+    height: 190px;
     width: auto;
+    padding-bottom: 100px;
     float: left;
     display: block;
+    -webkit-filter: drop-shadow(9px 9px 7px rgba(190, 190, 190, 0.6));
 }
 
-#projects {
-    padding-top: 110px;
+#projects-section {
+    padding-top: 150px;
     display: block;
 }
 
-.flex-container {
+.projects-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -77,30 +152,35 @@ body {
     padding: 0 5%;
 }
 
-.flex-container > div {
-    width: 360px;
+.projects-container > div {
+    width: 380px;
     position: relative;
     padding: 10px 15px 35px 15px;
     margin-top: 40px;
-    margin-bottom: 65px;
 }
 
-#projects .table {
+#projects-section .table {
     width: 100%;
     display: table;
 }
 
-#projects h4 {
+.projects-container {
+    background-color: rgba(29, 30, 37, 0.6);
+    width: 90%;
+    margin: 70px auto;
+    padding: 0px 0px 70px 0px;
+}
+
+#projects-section h4 {
     font-size: 20px;
     height: 70px;
     width: 100%;
-    color: rgb(250, 250, 250);
     text-align: center;
     display: table-cell;
     vertical-align: middle;
 }
 
-#projects img {
+#projects-section img {
     display: block;
     margin: 0 auto;
     width: 100%;
@@ -109,13 +189,13 @@ body {
     border-color: rgb(29, 30, 37);
 }
 
-#projects p {
+#projects-section p {
     font-size: 18px;
     text-align: center;
     padding-top: 10px;
     margin-top: 12px;
     margin-bottom: 8px;
-    color: rgb(175, 180, 192);
+    color: rgb(230, 230, 230);
 }
 
 .technology-badges {
@@ -146,11 +226,11 @@ body {
     text-align: center;
     padding-top: 110px;
     padding-bottom: 10px;
-    height: 60vh;
+    height: 70vh;
     margin-top: 70px;
 }
 
-.fab, .fas {
+.contact-icons a i {
     font-size: 90px;
     padding: 0px 25px 50px 25px;
 }
@@ -158,24 +238,31 @@ body {
 .fab:hover, .fas:hover {
     color: rgb(250, 250, 250);
     cursor: pointer;
+    text-shadow: 8px 8px 8px rgba(20, 20, 20, 0.8);
+}
+
+.contact-icons {
+    padding-top: 30px;
+}
+
+.contact-icons a {
+    color: black;
+    text-shadow: 8px 8px 10px rgba(220, 220, 220, 0.7);
 }
 
 a {
+    color: rgb(250, 250, 250);
     text-decoration: none;
-    color: black;
 }
 
 footer {
     text-align: center;
     margin-bottom: 13px;
-}
-
-footer p a {
-    color: rgb(250, 250, 250);
+    font-size: 18px;
 }
 
 footer p a:hover {
-    color: pink;
+    color: rgb(205, 126, 207);
 }
 
 h2 {
@@ -204,57 +291,46 @@ hr {
     color: rgb(104, 187, 116)
 }
 
-#welcome-section h3, #projects p {
+.color4 {
+    color: rgb(255, 182, 193)
+}
+
+#welcome-section h3, #projects-section p {
     font-family: 'Dosis', sans-serif;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     #navbar a {
         padding: 25px 15px;
         font-size: 20px;
     }
 
     #welcome-section {
-        padding-left: 50px;
+        padding-left: 5vw;
+        padding-right: 8vw;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    #welcome-section {
+        padding-top: 20vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
     #welcome-section img {
-        height: 110px;
+        height: 120px;
+        padding-bottom: 35px;
+        float: none;
+        margin: 0 auto;
     }
 
     #welcome-section h1 {
-        font-size: 20px;
+        font-size: 26px;
     }
 
     #welcome-section h3 {
-        font-size: 16px;
-        padding-right: 20px;
-        padding-top: 6px;
-    }
-
-    .flex-container > div {
-        width: 40%;
-    }
-
-    #projects h4 {
-        font-size: 18px;
-        height: 80px;
-    }
-
-    #projects p {
-        font-size: 18px;
-    }
-
-    #projects img {
-        width: 90%;
-    }
-
-    .fab, .fas {
-        font-size: 70px;
-    }
-
-    .contact-icons {
-        padding-top: 30px;
+        font-size: 19px;
     }
 }
 
@@ -267,20 +343,32 @@ hr {
         font-size: 20px;
     }
 
-    .flex-container > div {
-        width: 500px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    #welcome-section img {
+        height: 100px;
+        padding-top: 15px;
+    }
+
+    #welcome-section h1 {
+        font-size: 23px;
+    }
+
+    #welcome-section h3 {
+        font-size: 17px;
     }
 
     #contact-section {
-        padding-top: 90px;
-        padding-bottom: 10px;
         height: 65vh;
-        margin-top: 50px;
+    }
+
+    .contact-icons a i {
+        font-size: 60px;
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 23px;
+    }
+
+    footer {
+        font-size: 15px;
     }
 }
