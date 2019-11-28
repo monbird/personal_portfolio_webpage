@@ -148,7 +148,6 @@ h3, footer p {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 0 5%;
     background-color: rgba(29, 30, 37, 0.6);
     width: 90%;
     margin: 70px auto;
@@ -176,6 +175,15 @@ h3, footer p {
     vertical-align: middle;
 }
 
+#projects-section p {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    color: rgb(230, 230, 230);
+}
+
 #projects-section img {
     display: block;
     margin: 0 auto;
@@ -185,13 +193,57 @@ h3, footer p {
     border-color: rgb(29, 30, 37);
 }
 
-#projects-section p {
-    font-size: 18px;
+.project-cmo {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.project-cmo .project-cmo-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.projects-container a:hover .project-cmo-overlay {
+    opacity: 1;
+}
+
+.project-cmo-title {
+    position: absolute;
     text-align: center;
-    padding-top: 10px;
-    margin-top: 12px;
-    margin-bottom: 8px;
-    color: rgb(230, 230, 230);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 900;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 0.5em;
+    width: 100%;
+    top: 80%;
+    left: 50%;
+    color: #fff;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.projects-container a:hover .project-cmo-title {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
 }
 
 .technology-badges {
@@ -291,7 +343,7 @@ hr {
     color: rgb(255, 182, 193)
 }
 
-#welcome-section h3, #projects-section p {
+#welcome-section h3, #projects-section p, .project-cmo {
     font-family: 'Dosis', sans-serif;
 }
 
