@@ -189,20 +189,20 @@ h3, footer p {
     margin: 0 auto;
     width: 100%;
     height: auto;
-    border: solid;
-    border-color: rgb(29, 30, 37);
 }
 
 .project-cmo {
     position: relative;
     margin: auto;
     overflow: hidden;
+    border: solid;
+    border-color: rgb(29, 30, 37);
 }
 
 .project-cmo .project-cmo-overlay {
     background: rgba(0,0,0,0.7);
     position: absolute;
-    height: 99%;
+    height: 100%;
     width: 100%;
     left: 0;
     top: 0;
